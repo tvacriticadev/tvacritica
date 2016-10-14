@@ -12,6 +12,9 @@
 		83693A261DB179AE0053BF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83693A241DB179AE0053BF9F /* Main.storyboard */; };
 		83693A281DB179AE0053BF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83693A271DB179AE0053BF9F /* Assets.xcassets */; };
 		83693A2B1DB179AE0053BF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83693A291DB179AE0053BF9F /* LaunchScreen.storyboard */; };
+		83693A331DB17AE70053BF9F /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83693A321DB17AE70053BF9F /* RadioPlayer.swift */; };
+		83693A381DB17EF30053BF9F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83693A371DB17EF30053BF9F /* AVFoundation.framework */; };
+		83693A3A1DB17EFA0053BF9F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83693A391DB17EFA0053BF9F /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		83693A271DB179AE0053BF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83693A2A1DB179AE0053BF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83693A2C1DB179AE0053BF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83693A321DB17AE70053BF9F /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		83693A371DB17EF30053BF9F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		83693A391DB17EFA0053BF9F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83693A3A1DB17EFA0053BF9F /* MediaPlayer.framework in Frameworks */,
+				83693A381DB17EF30053BF9F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				83693A1F1DB179AE0053BF9F /* Acritica FM 93 */,
 				83693A1E1DB179AE0053BF9F /* Products */,
+				83693A361DB17EF30053BF9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,22 @@
 			children = (
 				83693A201DB179AE0053BF9F /* AppDelegate.swift */,
 				83693A221DB179AE0053BF9F /* ViewController.swift */,
+				83693A321DB17AE70053BF9F /* RadioPlayer.swift */,
 				83693A241DB179AE0053BF9F /* Main.storyboard */,
 				83693A271DB179AE0053BF9F /* Assets.xcassets */,
 				83693A291DB179AE0053BF9F /* LaunchScreen.storyboard */,
 				83693A2C1DB179AE0053BF9F /* Info.plist */,
 			);
 			path = "Acritica FM 93";
+			sourceTree = "<group>";
+		};
+		83693A361DB17EF30053BF9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83693A391DB17EFA0053BF9F /* MediaPlayer.framework */,
+				83693A371DB17EF30053BF9F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83693A331DB17AE70053BF9F /* RadioPlayer.swift in Sources */,
 				83693A231DB179AE0053BF9F /* ViewController.swift in Sources */,
 				83693A211DB179AE0053BF9F /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +317,7 @@
 				83693A311DB179AE0053BF9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
