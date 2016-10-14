@@ -7,7 +7,7 @@
 //
 //http://servidor1.crossdigital.com.br:8104
 //http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8
-import Foundation
+
 
 import AVFoundation
 import MediaPlayer
@@ -40,5 +40,7 @@ class RadioPlayer {
     func currentlyPlaying() -> Bool {
         return isPlaying
     }
+    
+    
 }
 
