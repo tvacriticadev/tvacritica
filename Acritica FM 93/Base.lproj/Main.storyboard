@@ -22,25 +22,28 @@
                                 <frame key="frameInset" minX="16" minY="46" width="288" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVh-qj-4QA">
-                                <frame key="frameInset" minX="16" minY="318" width="288" height="58"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IKZ-It-O6u">
+                                <frame key="frameInset" minX="140" minY="332" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.14117647058823529" green="0.27450980392156865" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Play">
+                                <connections>
+                                    <action selector="controlVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="axK-5M-bnP"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVh-qj-4QA">
+                                <frame key="frameInset" minX="33" minY="307" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ce3-Js-wlF"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IKZ-It-O6u">
-                                <frame key="frameInset" minX="101" minY="436" width="118" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="myVolumeController" destination="IKZ-It-O6u" id="aYA-o2-Q2o"/>
                         <outlet property="playButton" destination="kVh-qj-4QA" id="RWt-q7-pHQ"/>
                     </connections>
                 </viewController>
@@ -51,5 +54,6 @@
     </scenes>
     <resources>
         <image name="acritica_fm" width="1357" height="500"/>
+        <image name="play" width="225" height="225"/>
     </resources>
 </document>
