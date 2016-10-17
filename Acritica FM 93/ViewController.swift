@@ -28,16 +28,7 @@ class ViewController: UIViewController {
         }
        
         
-        /* if NSClassFromString("MPNowPlayingInfoCenter") != nil {
-         //let image:UIImage = UIImage(named: "logo_player_background")! // comment this if you don't use an image
-         //let albumArt = MPMediaItemArtwork(image: image)
-         let songInfo = [
-         MPMediaItemPropertyTitle: "Radio Brasov",
-         MPMediaItemPropertyArtist: "87,8fm",
-         //MPMediaItemPropertyArtwork: albumArt // comment this if you don't use an image
-         ] as [String : Any]
-         MPNowPlayingInfoCenter.default().nowPlayingInfo = songInfo
-         }*/
+       
         
         
     }
