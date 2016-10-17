@@ -26,8 +26,7 @@ class ViewController: UIViewController {
         } catch {
             print("Audio Session error.\n")
         }
-        
-        //Faz aparecer imagens e controles de áudio em backgropund
+       
         
         /* if NSClassFromString("MPNowPlayingInfoCenter") != nil {
          //let image:UIImage = UIImage(named: "logo_player_background")! // comment this if you don't use an image
