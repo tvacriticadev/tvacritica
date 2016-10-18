@@ -57,12 +57,14 @@ class ViewController: UIViewController {
     
     func playRadio() {
         RadioPlayer.sharedInstance.play()
-        playButton.setTitle("Pause", for: UIControlState.normal)
+        //playButton.setTitle("Pause", for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
     }
     
     func pauseRadio() {
         RadioPlayer.sharedInstance.pause()
-        playButton.setTitle("Play", for: UIControlState.normal)
+        //playButton.setTitle("Play", for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
         
     }
 
