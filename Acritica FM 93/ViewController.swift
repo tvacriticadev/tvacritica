@@ -64,9 +64,9 @@ class ViewController: UIViewController {
         
     }
     //Criação do Método WebView
-    @IBOutlet weak var faceWebView: UIWebView!
+   // @IBOutlet weak var faceWebView: UIWebView!
     
-    webView.
+    //webView.
     
     
 }
