@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acritica_fm" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-0s-PLq">
@@ -33,16 +33,45 @@
                                     <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ce3-Js-wlF"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="facebook.com/radioacriticaoficial" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SQy-zR-wVg">
+                                <frame key="frameInset" minX="70" minY="518" width="234" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-JK-Bib">
+                                <frame key="frameInset" minX="34" minY="518" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.27058823529411763" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="f">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="abrirPaginaFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Mo-Ub-Spb"/>
+                                    <action selector="faceUrlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypL-4l-hh1"/>
+                                    <action selector="urlButtonFace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aS-rH-Kc3"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="F" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-1w-tZi">
+                                <frame key="frameInset" minX="136" minY="429" width="48" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="faceWebView" destination="ybw-1w-tZi" id="wgO-Kl-TyP"/>
+                        <outlet property="faveView" destination="ybw-1w-tZi" id="Mdl-cz-BoJ"/>
+                        <outlet property="paginaFacebook" destination="DDe-JK-Bib" id="4wz-Mj-FnF"/>
                         <outlet property="playButton" destination="kVh-qj-4QA" id="RWt-q7-pHQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="125"/>
+            <point key="canvasLocation" x="892.5" y="170.07042253521126"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,7 @@ import AVFoundation
 import MediaPlayer
 
 class ViewController: UIViewController {
+
     
     @IBOutlet weak var playButton: UIButton!
 
@@ -26,13 +27,9 @@ class ViewController: UIViewController {
         } catch {
             print("Audio Session error.\n")
         }
-       
-        
-       
-        
         
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -66,7 +63,11 @@ class ViewController: UIViewController {
         playButton.setTitle("Play", for: UIControlState.normal)
         
     }
-
-
+    //Criação do Método WebView
+    @IBOutlet weak var faceWebView: UIWebView!
+    
+    webView.
+    
+    
 }
 
