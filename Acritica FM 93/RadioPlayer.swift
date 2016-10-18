@@ -19,6 +19,10 @@ class RadioPlayer {
     private var player = AVPlayer(url: URL(string: "http://servidor1.crossdigital.com.br:8104")!)
     private var isPlaying = false
     
+    func mudaVolume(volume: Float){
+        player.volume = volume
+    }
+    
     func play() {
         player.play()
         isPlaying = true

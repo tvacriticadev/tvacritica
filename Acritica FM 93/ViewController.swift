@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myVolumeController: UISlider!
     @IBAction func controlVolume(_ sender: AnyObject) {
+        RadioPlayer.sharedInstance.mudaVolume(volume: myVolumeController.value)
     }
     
     override func viewDidLoad() {
