@@ -14,10 +14,14 @@ import MediaPlayer
 
 class RadioPlayer {
     
-    static let sharedInstance = RadioPlayer()
+    static let sharedInstance = RadioPlayer()//INSTANCIA CRIADA PARA CONTROLAR O PLAY
     
-    private var player = AVPlayer(url: NSURL(string: "http://servidor1.crossdigital.com.br:8104")! as URL)
+    private var player = AVPlayer(url: URL(string: "http://servidor1.crossdigital.com.br:8104")!)
     private var isPlaying = false
+    
+    func mudaVolume(volume: Float){
+        player.volume = volume
+    }
     
     func play() {
         player.play()
@@ -40,7 +44,6 @@ class RadioPlayer {
     func currentlyPlaying() -> Bool {
         return isPlaying
     }
-    
     
 }
 

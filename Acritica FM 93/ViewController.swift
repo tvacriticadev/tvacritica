@@ -14,12 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playButton: UIButton!
 
+    @IBOutlet weak var myVolumeController: UISlider!
+    @IBAction func controlVolume(_ sender: AnyObject) {
+        RadioPlayer.sharedInstance.mudaVolume(volume: myVolumeController.value)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        //TRY CATCH PARA PLAY EM BACKBROUND
         do {
-            
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             UIApplication.shared.beginReceivingRemoteControlEvents()
             print("Receiving remote control events\n")
@@ -27,26 +31,21 @@ class ViewController: UIViewController {
             print("Audio Session error.\n")
         }
        
-        
-       
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     
-    @IBAction func playButtonPressed(_ sender: AnyObject) {
+    @IBAction func playButtonPressed(_ sender: AnyObject) { //ACTION DO BOTÃO PLAY/PAUSE
         
-        toggle()
+        toggle()//COMUTA PARA O STREAMING
         
     }
     
     
-    func toggle() {
+    func toggle() {//VERIFICA SE ESTÁ TOCANDO
         
         if RadioPlayer.sharedInstance.currentlyPlaying() {
             pauseRadio()
@@ -58,12 +57,14 @@ class ViewController: UIViewController {
     
     func playRadio() {
         RadioPlayer.sharedInstance.play()
-        playButton.setTitle("Pause", for: UIControlState.normal)
+        //playButton.setTitle("Pause", for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
     }
     
     func pauseRadio() {
         RadioPlayer.sharedInstance.pause()
-        playButton.setTitle("Play", for: UIControlState.normal)
+        //playButton.setTitle("Play", for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
         
     }
 
