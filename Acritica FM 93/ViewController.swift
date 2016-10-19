@@ -24,35 +24,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
         UIApplication.shared.beginReceivingRemoteControlEvents()
         self.becomeFirstResponder()
         
-      /*  func remoteControlReceived(with event: UIEvent?) {
-            guard let event = event else {
-                print("no event\n")
-                return
-            }
-            guard event.type == UIEventType.remoteControl else {
-                print("received other event type\n")
-                return
-            }
-            switch event.subtype {
-            case UIEventSubtype.remoteControlPlay:
-                print("received remote play\n")
-                RadioPlayer.sharedInstance.play()
-            case UIEventSubtype.remoteControlPause:
-                print("received remote pause\n")
-                RadioPlayer.sharedInstance.pause()
-            case UIEventSubtype.remoteControlTogglePlayPause:
-                print("received toggle\n")
-                RadioPlayer.sharedInstance.toggle()
-            default:
-                print("received \(event.subtype) which we did not process\n")
-            }
-        }*/
-        
         do {
+        
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             print("AVAudioSession Category Playback OK")
             do {
@@ -63,14 +39,12 @@ class ViewController: UIViewController {
             }
         } catch let error as NSError {
             print(error.localizedDescription)
+        }
         
-        
-       
-
-        if NSClassFromString("MPNowPlayingInfoCenter") != nil {
-           // let image:UIImage = UIImage(named: "logo_player_background")! // comment this if you don't use an image
-            //let albumArt = MPMediaItemArtwork(image: image) // comment this if you don't use an image
-            let songInfo = [
+       if NSClassFromString("MPNowPlayingInfoCenter") != nil {
+           let image:UIImage = UIImage(named: "logo_player_background")! // comment this if you don't use an image
+           let albumArt = MPMediaItemArtwork(image: image) // comment this if you don't use an image
+           let songInfo = [
                 MPMediaItemPropertyTitle: "Radio A Crítica",
                 MPMediaItemPropertyArtist: "93,1fm",
                //MPMediaItemPropertyArtwork: albumArt // comment this if you don't use an image
@@ -81,7 +55,7 @@ class ViewController: UIViewController {
         //TRY CATCH PARA PLAY EM BACKBROUND
         
         }
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
