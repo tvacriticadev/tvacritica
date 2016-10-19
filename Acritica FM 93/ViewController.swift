@@ -47,12 +47,12 @@ class ViewController: UIViewController {
            let songInfo = [
                 MPMediaItemPropertyTitle: "Radio A Crítica",
                 MPMediaItemPropertyArtist: "93,1fm",
-               //MPMediaItemPropertyArtwork: albumArt // comment this if you don't use an image
+                MPMediaItemPropertyArtwork: albumArt // comment this if you don't use an image
             ] as [String : Any]
             
             MPNowPlayingInfoCenter.default().nowPlayingInfo = songInfo
             }
-        //TRY CATCH PARA PLAY EM BACKBROUND
+        
         
         }
     
