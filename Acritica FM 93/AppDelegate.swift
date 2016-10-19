@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-
+    /* INTERACAO ENTRE O IOS E A CLASSE RADIO PLAYER
+     PARA CONTROLE DO APP NA LOCK SCREEN E CENTRAL DE CONTROLE
+     */
     
     override func remoteControlReceived(with event: UIEvent?) {
         guard let event = event else {
