@@ -7,11 +7,39 @@
 //
 
 import UIKit
+import AVFoundation
+import MediaPlayer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+
+    
+    override func remoteControlReceived(with event: UIEvent?) {
+        guard let event = event else {
+            print("no event\n")
+            return
+        }
+        guard event.type == UIEventType.remoteControl else {
+            print("received other event type\n")
+            return
+        }
+        switch event.subtype {
+        case UIEventSubtype.remoteControlPlay:
+            print("received remote play\n")
+            RadioPlayer.sharedInstance.play()
+        case UIEventSubtype.remoteControlPause:
+            print("received remote pause\n")
+            RadioPlayer.sharedInstance.pause()
+        case UIEventSubtype.remoteControlTogglePlayPause:
+            print("received toggle\n")
+            RadioPlayer.sharedInstance.toggle()
+        default:
+            print("received \(event.subtype) which we did not process\n")
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -40,30 +68,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+       
 
-    override func remoteControlReceived(with event: UIEvent?) {
-        guard let event = event else {
-            print("no event\n")
-            return
-        }
-        guard event.type == UIEventType.remoteControl else {
-            print("received other event type\n")
-            return
-        }
-        switch event.subtype {
-        case UIEventSubtype.remoteControlPlay:
-            print("received remote play\n")
-            RadioPlayer.sharedInstance.play()
-        case UIEventSubtype.remoteControlPause:
-            print("received remote pause\n")
-            RadioPlayer.sharedInstance.pause()
-        case UIEventSubtype.remoteControlTogglePlayPause:
-            print("received toggle\n")
-            RadioPlayer.sharedInstance.toggle()
-        default:
-            print("received \(event.subtype) which we did not process\n")
-        }
-    }
+
+
 
 }
 
