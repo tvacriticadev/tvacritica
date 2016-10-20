@@ -15,7 +15,7 @@
 		83693A331DB17AE70053BF9F /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83693A321DB17AE70053BF9F /* RadioPlayer.swift */; };
 		83693A381DB17EF30053BF9F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83693A371DB17EF30053BF9F /* AVFoundation.framework */; };
 		83693A3A1DB17EFA0053BF9F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83693A391DB17EFA0053BF9F /* MediaPlayer.framework */; };
-		83CFF2F61DB925AE00F3E134 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CFF2F51DB925AE00F3E134 /* FacebookViewController.swift */; };
+		83AEFCE71DB9606500E453E2 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AEFCE61DB9606500E453E2 /* FacebookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		83693A321DB17AE70053BF9F /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 		83693A371DB17EF30053BF9F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		83693A391DB17EFA0053BF9F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		83CFF2F51DB925AE00F3E134 /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
+		83AEFCE61DB9606500E453E2 /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +69,10 @@
 				83693A221DB179AE0053BF9F /* ViewController.swift */,
 				83693A321DB17AE70053BF9F /* RadioPlayer.swift */,
 				83693A241DB179AE0053BF9F /* Main.storyboard */,
-				83CFF2F51DB925AE00F3E134 /* FacebookViewController.swift */,
 				83693A271DB179AE0053BF9F /* Assets.xcassets */,
 				83693A291DB179AE0053BF9F /* LaunchScreen.storyboard */,
 				83693A2C1DB179AE0053BF9F /* Info.plist */,
+				83AEFCE61DB9606500E453E2 /* FacebookViewController.swift */,
 			);
 			path = "Acritica FM 93";
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CFF2F61DB925AE00F3E134 /* FacebookViewController.swift in Sources */,
+				83AEFCE71DB9606500E453E2 /* FacebookViewController.swift in Sources */,
 				83693A331DB17AE70053BF9F /* RadioPlayer.swift in Sources */,
 				83693A231DB179AE0053BF9F /* ViewController.swift in Sources */,
 				83693A211DB179AE0053BF9F /* AppDelegate.swift in Sources */,

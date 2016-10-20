@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FacebookIcon"/>
                                 <connections>
-                                    <segue destination="fUX-Th-CG2" kind="show" id="3uU-Hb-jv1"/>
+                                    <segue destination="bYH-HL-1Nc" kind="show" id="CqB-yp-rae"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,48 +62,48 @@
             <point key="canvasLocation" x="1274.4000000000001" y="122.78860569715144"/>
         </scene>
         <!--Facebook View Controller-->
-        <scene sceneID="eS0-af-l1S">
+        <scene sceneID="G2V-zb-6JM">
             <objects>
-                <viewController id="fUX-Th-CG2" customClass="FacebookViewController" customModule="Acritica_FM_93" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bYH-HL-1Nc" customClass="FacebookViewController" customModule="Acritica_FM_93" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AeJ-iE-h8S"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kab-iK-Lcp"/>
+                        <viewControllerLayoutGuide type="top" id="w3h-uw-UzU"/>
+                        <viewControllerLayoutGuide type="bottom" id="HmI-WG-aTU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7kn-Vo-KhI">
+                    <view key="view" contentMode="scaleToFill" id="bt6-Da-SRs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7f-gm-tGB">
-                                <frame key="frameInset" minX="48" minY="518" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="goBack:" destination="fUX-Th-CG2" eventType="touchUpInside" id="s95-mh-tMm"/>
-                                </connections>
-                            </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-g6-SVz">
-                                <frame key="frameInset" minX="16" minY="64" width="288" height="437"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLR-Jn-FlE">
+                                <frame key="frameInset" minX="16" minY="72" width="288" height="418"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr9-MR-rVW">
-                                <frame key="frameInset" minX="227" minY="518" width="51" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-my-utM">
+                                <frame key="frameInset" minX="249" minY="518" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Forwad"/>
+                                <state key="normal" title="Avançar"/>
                                 <connections>
-                                    <action selector="goFoward:" destination="fUX-Th-CG2" eventType="touchUpInside" id="0zI-BZ-0de"/>
+                                    <action selector="goForward:" destination="bYH-HL-1Nc" eventType="touchUpInside" id="KVb-ax-nx4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGm-VF-VW2">
+                                <frame key="frameInset" minX="16" minY="518" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="goBack:" destination="bYH-HL-1Nc" eventType="touchUpInside" id="Ajf-tL-5Tu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="faceWebView" destination="1Fy-g6-SVz" id="jOg-tz-ndE"/>
+                        <outlet property="faceWebView" destination="oLR-Jn-FlE" id="L6a-af-giY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QRJ-WU-XGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRa-6K-sOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116.875" y="122.53521126760563"/>
+            <point key="canvasLocation" x="2231.25" y="122.53521126760563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YaO-xp-jdb">

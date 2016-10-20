@@ -6,9 +6,8 @@
 //  Copyright © 2016 EasyTiDev. All rights reserved.
 //
 
-import UIKit
 import Foundation
-
+import UIKit
 
 class FacebookViewController: UIViewController {
     
@@ -28,13 +27,14 @@ class FacebookViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+ 
     }
-   
+    
     @IBAction func goBack(_ sender: AnyObject) {
         faceWebView.goBack()
     }
-    @IBAction func goFoward(_ sender: AnyObject) {
+    @IBAction func goForward(_ sender: AnyObject) {
         faceWebView.goForward()
     }
-    
+  
 }
