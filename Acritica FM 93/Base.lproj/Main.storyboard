@@ -40,10 +40,10 @@
                                     <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ce3-Js-wlF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yP-wU-1Z5">
-                                <frame key="frameInset" minX="40" minY="459" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yP-wU-1Z5">
+                                <frame key="frameInset" minX="123" minY="474" width="74" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook"/>
+                                <state key="normal" image="FacebookIcon"/>
                                 <connections>
                                     <segue destination="fUX-Th-CG2" kind="show" id="3uU-Hb-jv1"/>
                                 </connections>
@@ -125,6 +125,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FacebookIcon" width="74" height="74"/>
         <image name="acritica_fm" width="1357" height="500"/>
         <image name="pause" width="225" height="225"/>
         <image name="play" width="225" height="225"/>
